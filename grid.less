@@ -1,0 +1,32 @@
+.grid(@column) {
+	@width: (@column-width * @column) + (@gutter-width * (@column - 1));
+	width: @width;
+	
+	&[grid~="container"] {
+		width: @width + @gutter-width;
+	}
+}
+
+[grid] {
+	float: left;
+	margin: 0 @gutter-width / 2;
+	box-sizing: border-box;
+}
+
+[grid~="container"] {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+[grid~='1'] { .grid(1); }
+[grid~='2'] { .grid(2); }
+[grid~='3'] { .grid(3); }
+[grid~='4'] { .grid(4); }
+[grid~='5'] { .grid(5); }
+[grid~='6'] { .grid(6); }
+[grid~='7'] { .grid(7); }
+[grid~='8'] { .grid(8); }
+[grid~='9'] { .grid(9); }
+[grid~='10'] { .grid(10); }
+[grid~='11'] { .grid(11); }
+[grid~='12'] { .grid(12); }

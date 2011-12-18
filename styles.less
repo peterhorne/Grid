@@ -1,0 +1,26 @@
+@column-width: 60px;
+@gutter-width: 20px;
+@import 'grid.less';
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #eee;
+	font: 13px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+[grid]:not([grid~="container"]) {
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+#wrapper {
+	margin: 10px;
+}
